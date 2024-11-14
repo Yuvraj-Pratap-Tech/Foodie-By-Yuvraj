@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu - Foodie Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #f44336; 
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header .logo h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .hero {
+            background-image: url(img/food.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            animation: slideIn 2s ease-out;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 20px;
+            animation: slideIn 2s ease-out;
+        }
+
+        .cta-btn {
+            background-color: #ac3931;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .menu {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #f7f7f7;
+            color: #333;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .menu h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #f44336;
+        }
+
+        .menu p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .menu-item {
+            max-width: 300px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .menu-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .menu-item p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 14px;
+        }
+
+      
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">
+            <h1>Foodie Restaurant</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>Our Menu</h2>
+        <p>Explore our delicious and mouthwatering dishes.</p>
+    </div>
+</div>
+
+<section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <p>Our menu is a celebration of flavors! From mouthwatering appetizers to decadent desserts, every dish is crafted to perfection. Here's a sneak peek of what we offer:</p>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="img/Salad.jpg" alt="Fresh Caesar Salad">
+            <h3>Fresh Caesar Salad</h3>
+            <p>A crisp mix of romaine lettuce, Parmesan cheese, crunchy croutons, and our homemade Caesar dressing.</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/Burger.jpg" alt="Grilled Chicken Burger">
+            <h3>Grilled Chicken Burger</h3>
+            <p>Juicy grilled chicken breast, fresh lettuce, tomatoes, and our special sauce, all sandwiched between a soft brioche bun.</p>
+        </div>
+        <div class="menu-item">
+            <img src="img/Lava Cake2.jpg" alt="Chocolate Lava Cake">
+            <h3>Chocolate Lava Cake</h3>
+            <p>A rich and gooey chocolate cake with a molten center, served with a scoop of vanilla ice cream.</p>
+        </div>
+    </div>
+    <p>Explore the full menu to discover more mouthwatering dishes. There's something for everyone!</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Foodie Restaurant. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
